@@ -1,0 +1,254 @@
+
+/* Navigation Area Styling */
+.nav-style {
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+nav ul li a {
+    font-size: 0.5rem;
+}
+nav ul li {
+    padding: 0;
+}
+.about_mid_tag_line h2 {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+}
+.slider-title h2 {
+    font-size: 0.7rem;
+    padding: .5rem 1rem;
+}
+.dot {
+    display: inline-block;
+    width: 0.5rem;
+    height: .5rem;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+/* Home page area styling */
+
+.header-tag-line h2 {
+    font-size: .8rem;
+    line-height: 1.6rem;
+    width: 12rem;
+}
+
+.menu-banner {
+    width: 76%;
+}
+.the-middle-section {
+    width: fit-content;
+    padding: 1rem;
+}
+.the-middle-section h2 {
+    font-size: .9rem;
+    margin-bottom: 0.5rem;
+}
+.the-middle-section p {
+    font-size: .8rem;
+}
+
+.menu-button button {
+    height: 5rem;
+    width: 5rem;
+    font-size: 0.8rem;
+}
+.special-menu-pic img {
+    height: 9rem;
+    width: 8rem;
+}
+.special-menu-item {
+    padding-top: 2.5rem;
+}
+.special-menu-item h3 {
+    font-size: 1.5rem;
+}
+.description p {
+    font-size: .8rem;
+}
+
+.form-heading-line h2 {
+    font-size: 1.2rem;
+}
+.form-heading-line h3 {
+    font-size: 1rem;
+}
+.reservation-area {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.left-pic img {
+    height: 9rem;
+    width: 9rem;
+}
+#submit {
+    width:  7rem;
+    font-size: 1.1rem;
+}
+.form-heading-line {
+    margin-bottom: 0.3rem;
+}
+/* menu slider */
+.breakfast-menu p, .lunch-menu p, .evening-menu p {
+    width: 10rem;
+}
+.breakfast-menu p, .lunch-menu p, .evening-menu p {
+    font-size: .6rem;
+}
+.slider {
+    height: 36rem;
+}
+/* About Area styling */
+
+.about_mid_tag_line h2 {
+    font-size: 1rem;
+    border-bottom: 0.33rem solid rgba(224, 162, 6, 0.876);
+    border-radius: .3rem;
+    margin-bottom: 4rem;
+    padding-bottom: .5rem;
+}
+.heading-menu-slider {
+    font-size: 1rem;
+    padding: 0;
+}
+.breakfast-menu ul li, .lunch-menu ul li, .evening-menu ul li {
+    font-size: .8rem;
+}
+
+.left_pic_about_us {
+    height: 8rem;
+    width: 60%;
+}
+.about-description h2 {
+    font-size: 1.5rem;
+}
+.about-description p {
+    font-size: .9rem;
+}
+.divider-line{
+    margin: 1.3rem 0;
+}
+.our-mission h2, .our-vision h2 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-family: montez;
+    text-transform: capitalize;
+}
+.mission-and-vision p{
+   font-size: .9rem;
+}
+.booking-description h3 {
+    font-size: 2rem;
+}
+#book-btn {
+    width: 6rem;
+    font-size: .8rem;
+}
+/* Contact Area styling */
+.head-contact {
+    height: 100vh;
+}
+.contact-mid-tag-line {
+    position: absolute;
+    top: 10%;
+}
+.contact-mid-tag-line h2 {
+    font-size: 1rem;
+}
+.contact-mid-tag-line p {
+    font-size: .7rem;
+    text-align: center;
+    line-height: 1rem;
+    margin: 0;
+    width: 13rem;
+    padding: .5rem 0;
+    border-bottom: 0.33rem solid rgba(224, 162, 6, 0.876);
+    border-radius: .3rem;
+}
+.contactfrom-heading h2 {
+    font-size: 1.7rem;
+}
+.contactfrom-heading h3 {
+    font-size: .7rem;
+}
+.contactfrom-heading p {
+    font-size: .8rem;
+}
+.form-contact input {
+    font-size: .5rem;
+}
+#text-area {
+    font-size: .8rem;
+    height: 10rem;
+    text-align: center;
+}
+#send {
+    height: 2.5rem;
+    width: 7rem;
+    font-size: 1rem;
+}
+.contact-display-area h3 {
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+.contact-display-area {
+    padding: 2rem 0;
+}
+.location-outlet {
+    margin: 1.5rem auto;
+}
+.location h3 {
+    font-size: .85rem;
+}
+.opening-hours h3, .contact-phone h3 {
+    font-size: .8rem;
+}
+.location-content ul li {
+    font-size: .67rem;
+}
+
+/* Blog Area Styling */
+.blog-mid-tag-line {
+    height: auto;
+}
+.blog-mid-tag-line h2 {
+    font-size: 1rem;
+}
+.blog-mid-tag-line p {
+    font-size: .8rem;
+    padding-bottom: .8rem;
+    width: 13rem;
+    border-bottom: 0.33rem solid rgba(224, 162, 6, 0.876);
+    border-radius: .3rem;
+    margin: 0;
+}
+.blog-mid-tag-line h2 {
+    font-size: 1rem;
+    margin-top: 5rem;
+}
+/* footer area styling */
+.ft {
+    padding: 2rem 2rem;
+}
+.fot-menu ul li a {
+    font-size: .7rem;
+}
+.another-content ul li {
+    font-size: .7rem;
+}
+/* the gallery */
+.title_gallery {
+    height: auto;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.slider-title h2 {
+   border-bottom: none;
+   line-height: 1.5rem;
+}

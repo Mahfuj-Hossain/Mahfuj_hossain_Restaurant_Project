@@ -1,0 +1,13 @@
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 3rem;
+    overflow: auto;
+}
+.breakfast-menu p, .lunch-menu p, .evening-menu p {
+    padding-right: 1rem;
+}
+ul li.p{
+    width:17rem;
+  }

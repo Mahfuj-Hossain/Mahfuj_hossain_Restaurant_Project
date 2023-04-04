@@ -1,0 +1,137 @@
+
+/* Header styling */
+
+.header-style{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.459),rgba(46, 27, 27, 0.35)), url(../images/d2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/* Menu Styling */
+.menu{
+    background:linear-gradient(rgba(0, 0, 0, 0.683),rgba(0, 0, 0, 0.683)), url(../images/food14.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.menu-image img {
+    max-width: 10rem;
+    height: 10rem;
+}
+.menu-image p {
+    max-width: 10rem;
+    font-size: .7rem;
+}
+
+/* Main menu slider area */
+.menu-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    grid-gap: 3rem;
+    overflow: auto;
+    padding-right: 3rem;
+}
+
+/* special menu styling from here */
+.special-menu-pic img {
+    height: 11rem;
+    width: 10rem;
+}
+
+.reservation-area {
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+.divider-line {
+    height: .2rem;
+    width: 35rem;
+    margin: 3rem 0;
+}
+
+/* About area styling */
+
+.about {
+    grid-template-columns: 1fr;
+    padding: 3rem 1rem;
+}
+.about-mid-tag-line {
+    height: 78vh;
+}
+.left_pic_about_us {
+    height: 18rem;
+    width: 18rem;
+}
+.about-description p {
+    padding: 0 3rem;
+    text-align: justify;
+}
+.mission-and-vision {
+    grid-template-columns: 1fr;
+    padding: 3rem 1rem;
+}
+.our-vision p {
+    padding: 0;
+}
+
+
+
+/*Contact & location outlet styling here */
+.head-contact {
+    height: 100vh;
+    background-size: auto;
+    background-position: 70% ;
+}
+.contact-mid-tag-line p {
+    width: 25rem;
+    border-radius: 0.4rem;
+    font-size: 1.2rem;
+}
+.booking-description p {
+    padding: 0 3rem;
+    font-size: 1.1rem;
+}
+.contact-mid-tag-line h2 {
+    font-size: 1.5rem;
+}
+.location-outlet {
+    display: grid;
+    padding: 0 2rem;
+    grid-template-columns: 1fr;
+}
+.location-outlet .divider-line-footer {
+    height: .2rem;
+    width: 10rem;
+}
+.location h3 {
+    font-size: 1rem;
+    text-align: center;
+}
+.location-content ul li {
+    font-size: .8rem;
+    text-align: center;
+}
+.opening-hours h3, .contact-phone h3 {
+    font-size: 1rem;
+    text-align: center;
+}
+.line{
+    width: 100%;
+}
+.max-width-768-style{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* blog area styling */
+.blog-mid-tag-line h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.blog-mid-tag-line p {
+    font-size: 1.2rem;
+    border-radius: 0.4rem;
+}
+.inner-section-blog {
+    height: auto;
+    padding: 1rem;
+}

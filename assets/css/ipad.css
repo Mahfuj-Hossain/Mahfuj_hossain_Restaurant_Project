@@ -1,0 +1,222 @@
+/* animation delay */
+.animation_from_left_side {
+    transition-delay: .3s;
+  }
+  .the-middle-section {
+  transition-delay: .3s;
+  }
+  .animation_from_right{
+    transition-delay: .3s;
+  }
+
+  .animation_for_footer{
+    transition-delay: .8s;
+  }
+
+  .from_right{
+    transition-delay: .3s;
+  }
+
+/* header area styling */
+.header-style {
+    height: 100vh;
+}
+
+.menu {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    grid-gap: .5rem;
+    height: auto;
+}
+.menu-image img {
+    width: 14rem;
+    height: 11rem;
+}
+ul li.p{
+    color: rgb(223, 223, 21);
+    font-size: 1rem;
+    width:22rem;
+    margin-bottom: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+.menu-image p {
+    width: 14rem;
+}
+.menu-banner {
+    height: auto;
+    width: 80%;
+    padding: 0rem 2rem;
+    margin: auto;
+}
+.the-middle-section {
+    width: fit-content;
+    padding: 1.5rem;
+    text-align: center;
+}
+.logo-menu img {
+    height: 6.5rem;
+    width: 6.5rem;
+    border: none;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+.the-middle-section {
+    width: 125%;
+}
+.menu-button button {
+    margin-bottom: 1rem;
+}
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 3rem;
+    overflow: auto;
+}
+.breakfast-menu p, .lunch-menu p, .evening-menu p {
+    padding-right: 1rem;
+}
+
+/* background overlay styling */
+.display-area-pic {
+    height: auto;
+    padding: 4rem 0;
+}
+.display-area-pic h2 {
+    font-size: 3.5rem;
+}
+
+
+/* special menu styling */
+
+.special-menu {
+    grid-template-columns: 1fr;
+    padding: 4rem 0;
+}
+.special-menu-pic img {
+    height: 11rem;
+    width: 11rem;
+}
+
+.menu-description {
+    width: 80%;
+    margin: auto;
+    grid-gap: 1.8rem;
+}
+.special-menu-item {
+    padding-top: 4rem;
+}
+/* reservation area styling */
+.reservation-area {
+    height: auto;
+    padding: 4rem 2rem;
+    justify-content: center;
+}
+
+.left-pic img {
+    height: 19rem;
+    width: 19rem;
+}
+.form-heading-line h2 {
+    font-size: 2rem;
+}
+.form-heading-line h3 {
+    font-size: 1.8rem;
+}
+/* about section styling */
+.about-description p {
+    padding: 0 1rem;
+    text-align: justify;
+}
+.mission-and-vision {
+    height: auto;
+    padding: 3rem 0;
+    width: 90%;
+    margin: auto;
+}
+.our-vision {
+    padding: 0 1rem;
+    text-align: justify;
+}
+.our-mission {
+    padding: 0 1rem;
+    text-align: justify;
+}
+.online-booking {
+    height: auto;
+    padding: 5rem 0;
+}
+#book-btn {
+    margin-top: 3rem;
+}
+
+/* contact us area styling */
+
+
+.location-outlet {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr .1fr 1fr .1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 3.5rem auto;
+    width: 96%;
+    grid-gap: 2rem;
+}
+
+.contact-form {
+    padding: 3rem 0;
+}
+
+
+/* blog area styling */
+.inner-section-blog {
+    height: auto;
+    padding: 3rem 3.5rem;
+}
+.time-date-event {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.the-blog-image {
+    padding: 0 2rem;
+}
+.blog-description p {
+    font-size: 1rem;
+}
+.the-blog-image img {
+    height: auto;
+    width: 100%;
+    padding: 0 ;
+    margin: auto;
+}
+.blog-description {
+    text-align: justify;
+}
+.blog-description h2 {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+/* footer area styling */
+.ft {
+    padding: 3rem 2rem;
+}
+a .fab {
+    font-size: 2.2rem;
+}
+.another-content ul li {
+    font-size: .9rem;
+    padding: 0 1rem;
+}
+.fot-menu ul li a {
+    font-size: .91rem;
+}
+.fot-menu ul li {
+    border-bottom: .2rem solid rgba(233, 177, 37, 0.18);
+    padding: .5rem 0;
+}

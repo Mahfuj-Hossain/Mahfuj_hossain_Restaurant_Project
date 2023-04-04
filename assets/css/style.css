@@ -1,0 +1,1361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body{
+    overflow-x: hidden;
+}
+ 
+  /*---------------------------------------------------------
+  The header and the nav is started from here
+   ---------------------------------------------------------*/
+
+  .logo img{
+   height: 4.5rem;
+   width: 4.5rem;
+   border-radius: 50%;
+  }
+  nav ul li{
+    list-style-type: none;
+  }
+  .nav-style {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.595);
+    width: 100%;
+    z-index: 9;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li a {
+    font-size: 1rem;
+    padding: 0.3rem 2rem;
+    text-decoration: none;
+    color: rgb(233, 218, 218);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 0.15rem solid rgb(253, 199, 60);
+    background-color: rgba(148, 96, 11, 0.322);
+    border-radius: 0.2rem;
+    transition: 0.1s;
+  }
+  
+/* --------------------------------------------------
+Home page Image slider
+---------------------------------------------------- */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.nav-style {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: .5rem 0;
+  flex-wrap: wrap;
+}
+
+.nav-style ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Slideshow styling */
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1.4s ease-in-out;
+ 
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6666;
+}
+
+.dot {
+  display: inline-block;
+  width: .8rem;
+  height: .8rem;
+  margin: 0 .4rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+input#radio1, #radio2, 
+#radio3, #radio4, #radio5{
+  display: none;
+}
+.dot.active {
+  background-color: #bb0909b5;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 40% 50%;
+}
+img.fit_picture {
+  object-position: 40% 35%;
+}
+img.fit_booking{
+  object-position: 0% 15%;
+}
+img.fit-img {
+  object-position: 70% 60%;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1.4s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.421);
+  z-index:2;
+}
+
+/* Slider title styling */
+
+.slider-title {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  text-align: center;
+  opacity: 1;
+  width: 100%;
+}
+
+.slider-title h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2.3rem;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  font-family: montez, cursive, sans-serif;
+  border-bottom: .33rem solid rgb(240, 175, 10);
+  width: fit-content;
+  padding: 0 3rem;
+  padding-bottom: 1rem;
+  border-radius: .3rem;
+}
+
+
+  /*---------------------------------------------------------
+   The Main Menu Section is started from here
+   ---------------------------------------------------------*/
+   .menu{
+     background-color: rgb(177, 176, 176);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: auto;
+    padding: 2rem 1.5rem;
+  }
+  
+  .menu img{
+    width: 19rem;
+    height: 12rem;
+    border: .06rem solid rgb(23, 41, 22);
+    border-top-right-radius: 1rem;
+    box-shadow: black .5rem -.7rem 2.5rem;
+  }
+  .menu-image{
+   display: flex;
+   flex-direction: column;
+   margin-top: 3.5rem;
+  }
+  .menu-image p{
+    width: 19rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+   padding: 1rem 3.5rem;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.534);
+   color: white;
+   font-size: 1.1rem;
+   font-weight: 550;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  /*---------------------------------------------------------
+         Main Menu style is started form here
+   ---------------------------------------------------------*/
+   .menu-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 4rem 0;
+    width: 16rem;
+    background-color: rgba(15, 15, 15, 0.938);
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    border: .2rem solid rgba(21, 51, 107, 0.609);
+    border-radius: 2.5rem;
+    gap: 2rem;
+  }
+  
+  .logo-menu img{
+    height: 6.5rem;
+    width: 6.5rem;
+    border: none;
+    border-radius: 50%;
+  
+  }
+  .the-middle-section{
+    font-family: glory, sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: .1rem solid white;
+    text-align: center;
+    text-transform: capitalize;
+    width: fit-content;
+    padding: 1.2rem;
+    color: white;
+    box-shadow: .4rem -.6rem 6rem rgba(233, 108, 5, 0.65);
+    line-height: 1.9rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .the-middle-section h2{
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu-button button{
+    height: 8rem;
+    width: 8rem;
+    background-color: rgba(0, 0, 0, 0.274);
+    color: white;
+    font-size: 1.5rem;
+    border: .4rem solid white;
+    border-radius: 50%;
+    box-shadow: .6rem -.3rem 3.5rem rgb(184, 179, 179);
+    cursor: pointer;
+  }
+
+/* ----------------------------------------
+          Main menu slider 
+------------------------------------------*/
+
+.slider {
+  position: absolute;
+  width: 98%;
+  background-color: #191717fb;
+  z-index: 9;
+  transition: all 1s ease-in-out;
+  transform: translateX(-105%);
+  transition:2s ease-in-out;
+  height: 40rem;
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem 1rem;
+}
+.slider.show {
+  transform: translateX(0%);
+}
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .4rem 1rem;
+  font-size: 2rem;
+  background-color: rgb(119, 6, 6);
+  border: none;
+  cursor: pointer;
+}
+/* The content of menu styling */
+.menu-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  grid-gap: 3rem;
+}
+.heading-menu-slider{
+color: goldenrod;
+display: flex;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+margin-bottom: 1.6rem;
+font-size: 2rem;
+border-bottom: .2rem solid gold;
+width: fit-content;
+padding: 0 1rem;
+padding-bottom: .3rem;
+}
+
+.breakfast-menu ul li, .lunch-menu ul li, .evening-menu ul li {
+  list-style: none;
+  font-size: 1.4rem;
+  margin-bottom: .3rem;
+  color: rgb(242, 242, 117);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ul li.p{
+  color: rgb(223, 223, 21);
+  font-size: 1rem;
+  width:22rem;
+  margin-bottom: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+  /*---------------------------------------------------------
+   Display are is started from here
+   ---------------------------------------------------------*/
+  .display-area-pic{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.678)), url(../images/m6.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-attachment: fixed;
+    height: auto;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .background-overlay-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .display-area-pic h2{
+    font-family: 'Montez', cursive;
+    font-size: 2.5rem;
+    color: goldenrod;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  #btn{
+    height: 8rem;
+    width: 8rem;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, 0.267);
+    color: rgb(255, 183, 0);
+    border: .3rem solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  #btn span{
+    font-size: .9rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  
+  /*------------------------------------------
+   Special menu section is started from here (left side)
+   -------------------------------------------*/
+   .special-menu{
+     background-color:  rgb(255, 255, 255);
+    height:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 5rem 0;
+  }
+  .special-menu-pic img{
+    height: 13rem;
+    width: 13rem;
+    margin: 0;
+    padding: 0;
+    border: .3rem solid rgba(0, 0, 0, 0.479);
+    border-radius: .6rem;
+    box-shadow: black .9rem -.9rem 1rem ;
+    padding: .1rem;
+  }
+  .special-menu-pic{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: auto;
+  grid-row-gap: 1rem;
+  grid-column-gap: .8rem;
+  }
+  /*---------------------------------------------------------
+   Special menu section is started from here (Right side)
+   ---------------------------------------------------------*/
+ 
+  .special-menu-item h4{
+    font-family: montez;
+    font-size: 2.5rem; 
+    text-align: center;
+  }
+  .special-menu-item h3 {
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  .thum-image{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    border: .2rem black solid ;
+    padding: .1rem;
+  }
+  ul.menu-description {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+  .menu-description{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-row-gap: 2rem;
+  }
+  .menu-description li{
+    list-style-type: none;
+    font-family:'Courier New', Courier, monospace;
+  }
+  .description h2{
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+    font-family: montez, cursive,sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .description p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .price p{
+    font-size: 3rem;
+    font-family: montez;
+    color: rgb(146, 106, 6);
+  }
+  .price p::before{
+    content: '';
+    width: 4rem;
+    height: .05rem;
+    background-color: goldenrod;
+    display: block;
+  }
+  .price p::after{
+    content: '';
+    width: 4rem;
+    height: .05rem;
+    background-color: goldenrod;
+    display: block;
+  }
+  
+  
+  /*---------------------------------------------------------
+       Reservation Section is started from here
+   ---------------------------------------------------------*/
+   .reservation-area{
+      height: auto;
+      padding: 5rem 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.541),
+      rgb(0, 0, 0)), url(../images/a8.jpg) 
+      no-repeat;
+      background-size: cover;
+      background-position:center center;
+      background-attachment: fixed;
+      display: grid;
+      grid-template-columns: .8fr .1fr .8fr;
+      align-items: center;
+      justify-items: center;
+  }
+  .left-pic img{
+    height: 20rem;
+    width: 25rem;
+    margin: auto;
+    border-radius: .4rem;
+    border: .4rem solid rgba(175, 156, 156, 0.746);
+   border-top-left-radius: 4rem;
+   box-shadow: .8rem -1rem 5rem;
+   position: relative;
+   }
+
+   .form-row{
+    display: grid;
+    grid-template-columns: 1fr;
+
+   }
+   
+   form select, form input{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: .9rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: .4rem .2rem;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.192);
+    color: white;
+    border-bottom: .1rem solid goldenrod;
+  }
+  .submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  #submit{
+    height: 3rem;
+    width: 10rem;
+    background-color: rgba(37, 3, 3, 0);
+    border: none;
+    outline: none;
+    font-family: montez, cursive, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    border: .1rem solid orange;
+    cursor: pointer;
+   border-radius: .4rem;
+  }
+  .form-heading-line h2{
+    font-size: 2.5rem;
+    font-family: montez;
+  }
+  .form-heading-line h3{
+    margin-top: .4rem;
+    font-size: 2.2rem;
+    font-family: montez;
+    margin-bottom: 1rem;
+  }
+  .form-heading-line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  
+  
+  /*---------------------------------------------------------
+       The About page is started from here
+   ---------------------------------------------------------*/
+   .head-about{
+     background:linear-gradient(rgba(0, 0, 0, 0.56),rgba(0, 0, 0, 0.5)), url(../images/a8.jpg) no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+     height: 100vh;
+     display: block;
+     max-width: 100%;
+     height:100vh;
+   }
+   .about_mid_tag_line h2{
+     color: white;
+     font-size: 3rem;
+     padding: 1rem 3rem;
+     font-family: montez, cursive, sans-serif;
+     text-transform: uppercase;
+     font-weight: bolder;
+     border-bottom: .5rem solid rgba(224, 162, 6, 0.876);
+     border-radius: .4rem;
+    }
+   .about_mid_tag_line{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+   }
+   /*---------------------------------------------------------
+       Description of the about page is started from here 
+   ---------------------------------------------------------*/
+
+
+
+  .about{
+    display: grid;
+    grid-template-columns: 1fr .2fr 1fr;
+    height: auto;
+    padding: 3rem;
+  }
+  .left_pic_about_us{
+    height: 18rem;
+    width: 70%;
+    border: rgb(122, 88, 2) .3rem solid;
+    box-shadow: .9rem -.9rem 1rem ;
+  }
+  .about-left-pic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .about-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-description h2{
+    font-family: montez, cursive;
+    text-transform: capitalize;
+   font-size: 3.5rem;
+  }
+  .about-description p{
+  margin-top: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  padding: 0rem 1rem;
+  text-align: justify;
+  }
+  .underline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .divider-line{
+    display: inline-block;
+    height: 12rem;
+    width: .2rem;
+    background-color: goldenrod;
+  }
+
+  
+  /* -------------------------------------------------
+  The mission and the vision is started from here
+  ----------------------------------------------------*/
+  .mission-and-vision{
+    height: auto;
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr .1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .our-mission h2{
+    text-align: center;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-family: montez;
+  }
+
+  .our-vision h2{
+    text-align: center;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-family: montez;
+  }
+ 
+  .divider-lines{
+    display: inline-block;
+    height: 12rem;
+    width: .2rem;
+    background-color: goldenrod;
+  }
+  .our-mission, .our-vision p{
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    text-align: justify;
+  }
+   /* -------------------------------------------------
+             Our policy is started from here
+  ----------------------------------------------------*/
+
+   /* -------------------------------------------------
+             Online Booking is started from here
+  ----------------------------------------------------*/
+  .online-booking{
+    height: auto;
+    padding: 5rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.784),rgba(0, 0, 0, 0.733)),url(../images/a1.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+  }
+  .booking-description h3{
+    font-size: 3rem;
+    font-family: montez;
+    text-align: center;
+  }
+  .booking-description p{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+  #book-btn{
+    width: 13rem;
+    height: 3.2rem;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: none;
+    color: white;
+    border: .1rem solid white;
+    border-radius: .3rem;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  #book-btn:hover{
+    background-color: black;
+    font-size: 1rem;
+    transition: .3s ease;
+  }
+
+  
+   /* -------------------------------------------------
+             The Contact Area is started from here
+  ----------------------------------------------------*/
+  .head-contact{
+    background:linear-gradient(rgba(0, 0, 0, 0.56),rgba(0, 0, 0, 0.5)), url(../images/s2.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position:left top;
+    background-size:auto;
+    height: 100vh;
+    color: white;
+
+  }
+  .contact-mid-tag-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+ .contact-mid-tag-line h2{
+  color: white;
+  font-size: 1.9rem;
+  font-family: montez;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+.contact-mid-tag-line p{
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  padding: .8rem 4rem;
+  font-weight: bolder;
+  border-bottom: .4rem solid rgba(228, 172, 32, 0.993);
+  width: fit-content;
+  border-radius: .4rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  /* -------------------------------------------------
+             The Contact Form Area is started from here
+  ----------------------------------------------------*/
+  .contact-form{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+  .contactfrom-heading{
+    text-align: center;
+  }
+  .divide-line{
+    background-color: rgb(165, 120, 5);
+    height: .15rem;
+    width: 10rem;
+    display: inline-block;
+  }
+  .contactfrom-heading p{
+    margin-top: 1.5rem;
+    font-size: 1.7rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .contactfrom-heading h2{
+    font-family: montez, cursive;
+    font-size: 2.4rem;
+    color: rgb(165, 120, 5);
+    margin-bottom: 1rem;
+  }
+  .contactfrom-heading h3{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .form-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-contact input{
+    height: 2.5rem;
+    width: 50%;
+    outline: none;
+    border: none;
+    border: .13rem solid rgb(165, 120, 5);
+    border-radius: .4rem;
+    text-align: center;
+    margin:.4rem 1.5rem;
+    font-size: 1.1rem;
+    background-color: white;
+    color: black;
+  }
+  .contact-from-with-textarea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-form-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #text-area{
+    border: none;
+    outline: none;
+    border: .13rem solid rgb(165, 120, 5);
+    border-radius: .4rem;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    width: 80%;
+    height: 12rem;
+    font-family: monospace;
+    text-transform: capitalize;
+    margin-top: 2rem;
+  }
+  #send{
+    height: 3.5rem;
+    width: 15rem;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    background-color: rgb(34, 32, 32);
+    color: rgb(165, 120, 5);
+    font-family: monospace;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border: .11rem solid goldenrod;
+    border-radius: .3rem;
+  }
+  #send:hover{
+    background-color: white;
+    font-size: 1.8rem;
+    transition: .3s ease-in-out;
+    border: .15rem solid black;
+    font-weight: bolder;
+  }
+
+  .contact-display-area{
+    height: auto;
+    padding: 10rem;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.483),rgba(0, 0, 0, 0.483)), url(../images/s4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-display-area h2{
+    font-size: 3rem;
+    font-family: montez, cursive;
+    text-transform: capitalize;
+    color:  rgb(165, 120, 5);
+  }
+  .contact-display-area h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .location-outlet{
+    height: auto;
+    display: grid;
+  grid-template-columns: 1fr .1fr 1fr .1fr 1fr;
+   align-items: center;
+   justify-items: center;
+   margin: 3.5rem 0;
+  }
+  .location h3{
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .line{
+    background-color:goldenrod;
+    height: .15rem;
+    width: 5rem;
+    display: inline-block;
+    margin-bottom: .5rem;
+  }
+  
+  .location-content ul li{
+    list-style-type: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+ 
+  .opening-hours {
+    margin-top: 1rem;
+  }
+  .contact-phone{
+    margin-top: 1rem;
+  }
+ .opening-hours h3, .contact-phone h3{
+   font-size: 1.2rem;
+   font-weight: normal;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-transform: uppercase;
+   margin-bottom: .6rem;
+ } 
+ .card_for_location{
+  background-color: rgba(0, 0, 0, 0.017);
+  height: auto;
+  padding: 2rem 2rem;
+  box-shadow: -.7rem -.8rem 1.5rem rgba(0, 0, 0, 0.67);
+  border: .12rem solid goldenrod;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+ }
+  /* -------------------------------------------------
+             The Blog Area is started from here
+  ----------------------------------------------------*/
+  .head-blog{
+    background:linear-gradient(rgba(0, 0, 0, 0.443),rgba(0, 0, 0, 0.403)), url(../images/t1.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: 40% 25%;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+  }
+  .blog-mid-tag-line{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  }
+  .blog-mid-tag-line h2{
+   color: white;
+   font-size: 1.9rem;
+   font-family: montez;
+   letter-spacing: .1em;
+   text-transform: uppercase;
+   text-align: center;
+ 
+ }
+ .blog-mid-tag-line p{
+   color: white;
+   font-size: 1.4rem;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   text-transform: uppercase;
+   padding: .8rem 4rem;
+   font-weight: bolder;
+   border-bottom: .4rem solid rgba(228, 172, 32, 0.993);
+   border-radius: .4rem;
+   margin-top: 1.4rem;
+ }
+
+   /* -------------------------------------------------
+             The Blog inner-section is started from here
+  ----------------------------------------------------*/
+  .inner-section-blog {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    justify-items: center;
+    align-items: center;
+    padding: 4rem 3.5rem;
+}
+  .the-blog-image img{
+    height: 23rem;
+    width: 80%;
+    box-shadow: 1rem -1rem 2rem rgba(0, 0, 0, 0.322);
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border: .17rem solid rgba(0, 0, 0, 0.287);
+    padding: .3rem;
+    margin: 0 auto;
+  }
+  .the-blog-image{
+    margin: 0 auto;
+  }
+  .blog-description h2{
+    font-size: 1.6rem;
+    font-family: roboto;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-bottom: .6rem;
+    border-bottom: .34rem solid goldenrod;
+    margin-bottom: 2rem;
+    width: fit-content;
+  }
+  .u-line{
+    height: .1223rem;
+    width: 8rem;
+    background-color: goldenrod;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  .time-date-event ul li{
+    list-style-type: none;
+    font-family: roboto, sans-serif;
+    line-height: 1.8rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+  }
+  .blog-description p{
+    font-size: 1.15rem;
+    line-height: 1.7rem;
+  }
+  .blog-description ul li{
+    text-align: right;
+    list-style-type: none;
+    margin-top: 1rem;
+  }
+  .blog-description ul li a{
+    text-decoration: none;
+    font-family: roboto, sans-serif;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: rgb(143, 102, 0);
+  }
+  .line-event{
+    height: .11rem;
+    width: 100%;
+    background-color: goldenrod;
+    display: inline-flex;
+    margin: .8rem 0;
+
+  }
+  .blog-hr-line{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(219, 213, 213);
+    height: .01rem;
+    outline: none;
+    border:none
+  }
+
+
+ /* The gallery section is started from here */
+ header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.overlay_gallery{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index:2;
+}
+img#fit-top{
+  object-position: 40% 60%;
+}
+img#fit_third_image{
+  object-position: 40% 85%;
+}
+/* The light-box adding for the gallery and styling here */
+.photos_of_restaurant{
+  width: 100%;
+  height: auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 2%;
+  background-color: rgba(0, 0, 0, 0.276);
+}
+.gallery_for_photos{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+}
+.gallery_for_photos img{
+  display: grid;
+  grid-column: auto;
+  width: 100%;
+  border-top-left-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  grid-auto-flow: dense;
+
+}
+
+.title_gallery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  background: url(../images/u4.jpg);
+}
+.title_gallery h1{
+  color: rgb(253, 253, 253);
+  font-size: 1.9rem;
+  font-family: montez;
+  text-transform: uppercase;
+  text-align: center;
+}
+.title_gallery h2{
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  padding: .8rem 4rem;
+  font-weight: bolder;
+  border-bottom: .4rem solid rgba(228, 172, 32, 0.993);
+  width: fit-content;
+  border-radius: .4rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+  /*---------------------------------------------------------
+       The footer Section is started from here
+   ---------------------------------------------------------*/
+   .ft{
+    background: linear-gradient(rgba(0, 0, 0, 0.853),rgba(0, 0, 0, 0.844)), url(../images/a8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr .1fr 1fr .1fr 1fr;
+    height: auto;
+    padding: 3rem 0;
+    color: white;
+  }
+  a .fab{
+    font-size: 3rem;
+    padding: .3rem;
+    color: white;
+  }
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .another-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .another-content ul li{
+   list-style-type: none;
+   margin: .5rem 0;
+   text-align: center;
+   font-size: 1.1rem;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  
+  .fot-menu{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    list-style-type: none;
+  }
+  
+  .fot-menu ul li{
+   list-style-type: none;
+   padding-bottom: .3rem;
+   text-align: center;
+  }
+  .fot-menu ul li a{
+   text-decoration: none;
+   font-size: 1.1rem;
+   color:white;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+ }
+ .fot-menu ul li a:hover{
+   border-bottom: .15rem solid rgb(253, 199, 60);
+   background-color: rgba(148, 96, 11, 0.322);
+   padding: 0 2rem;
+   border-radius: .2rem;
+ }
+ .divider-line-footer{
+   display: inline-block;
+   height: 10rem;
+   width: .1rem;
+   background-color: goldenrod;
+ }
+ .fot-menu ul li {
+  border-bottom: .2rem solid rgba(233, 177, 37, 0.18);
+  padding: .5rem 0;
+}
+/* The animation for the website */
+
+.animation_from_left_side {
+  opacity: 0;
+  filter: blur(.2rem);
+  transform: translateX(-100%);
+  transition: all 2s;
+  transition-delay: .3s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.the-middle-section {
+opacity: 0;
+transform: translateY(60%);
+filter: blur(.2rem);
+transition: 1s ease-in-out;
+transition-delay: .4s;
+}
+.the-middle-section.show {
+opacity: 1;
+filter: blur(0);
+transform: translateY(0);
+}
+
+.animation_from_right{
+  transform: translateX(100%);
+  opacity: 0;
+  filter: blur(.2rem);
+  transition: 2s;
+  transition-delay: .3s;
+}
+
+.animation_from_right.show
+ {
+  opacity: 1;
+  transform: translateX(0%);
+  filter: blur(0);
+}
+.animation_for_footer{
+  transform: translateX(-100%);
+  opacity: 0;
+  filter: blur(.2rem);
+  transition: 2s;
+  transition-delay: .3s;
+}
+.animation_for_footer.show{
+  opacity: 1;
+  transform: translateX(0%);
+  filter: blur(0);
+}
+.from_right{
+  transform: translateX(-100%);
+  opacity: 0;
+  filter: blur(.2rem);
+  transition: 2s;
+  transition-delay: .3s;
+}
+.from_right.show{
+  opacity: 1;
+  transform: translateX(0%);
+  filter: blur(0);
+}
+.fade_in_animation{
+  opacity: 0;
+  filter: blur(.1rem);
+  transition: 1s;
+  transition-delay: .5s;
+  margin-top: 5rem;
+}
+.fade_in_animation.show{
+  opacity: 1;
+  filter: blur(0);
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
